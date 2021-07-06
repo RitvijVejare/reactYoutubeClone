@@ -16,6 +16,10 @@ import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
 import MoreIcon from "@material-ui/icons/MoreVert";
 
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import TvTwoToneIcon from '@material-ui/icons/TvTwoTone';
+import MusicNoteTwoTone from '@material-ui/icons/MusicNoteTwoTone';
+
 import Divider from "@material-ui/core/Divider";
 
 import logo from "../../assets/logo.png";
@@ -141,13 +145,13 @@ const Header = (props) => {
       open={isAppsOpen}
       onClose={handleAppsMenuClose}
     >
-      <MenuItem onClick={handleAppsMenuClose}><MenuIcon style={{marginRight:"10px"}} />YouTube TV</MenuItem>
+      <MenuItem onClick={handleAppsMenuClose}><TvTwoToneIcon style={{color: "red", marginRight:"10px"}}/>YouTube TV</MenuItem>
       <Divider />
-      <MenuItem onClick={handleAppsMenuClose}><MenuIcon style={{marginRight:"10px"}}/>YouTube Music</MenuItem>
-      <MenuItem onClick={handleAppsMenuClose}><MenuIcon style={{marginRight:"10px"}}/>YouTube Kids</MenuItem>
+      <MenuItem onClick={handleAppsMenuClose}><MusicNoteTwoTone style={{color: "red", marginRight:"10px"}}/>YouTube Music</MenuItem>
+      <MenuItem onClick={handleAppsMenuClose}><YouTubeIcon style={{color: "red", marginRight:"10px"}}/>YouTube Kids</MenuItem>
       <Divider />
-      <MenuItem onClick={handleAppsMenuClose}><MenuIcon style={{marginRight:"10px"}}/>Creator Academy</MenuItem>
-      <MenuItem onClick={handleAppsMenuClose}><MenuIcon style={{marginRight:"10px"}}/>YouTube for Artists</MenuItem>
+      <MenuItem onClick={handleAppsMenuClose}><YouTubeIcon style={{color: "red", marginRight:"10px"}}/>Creator Academy</MenuItem>
+      <MenuItem onClick={handleAppsMenuClose}><YouTubeIcon style={{color: "red", marginRight:"10px"}}/>YouTube for Artists</MenuItem>
     </Menu>
   );
   

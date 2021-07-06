@@ -1,10 +1,11 @@
 import Chip from "@material-ui/core/Chip";
 // import { useTheme } from "@material-ui/core/styles";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const ChipsContainer = (props) => {
   // const { palette } = useTheme();
   // const chipColor = palette.secondary.main;
-  let chipsData = ["All","Red Dead Redemption 2", "Red Dead Redemption 2","Red Dead Redemption 2","Red Dead Redemption 2", "JerryRigsEverything", "Technical Guruji", "CarryMinati"]
+  let chipsData = ["All","ReactJS", "NodeJS", "Red Dead Redemption 2","Red Dead Redemption", "Grand Theft Auto 5", "JerryRigsEverything", "Technical Guruji", "CarryMinati", <ArrowForwardIosIcon style={{fontSize: "small"}}/>]
   return (
     <div style={styles.container}  >
       {chipsData.map((chipData)=>{
